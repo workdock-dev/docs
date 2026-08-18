@@ -336,6 +336,7 @@ Add the following to `.env`:
 | --- | --- |
 | `WORKDOCK_GITHUB_BOT_LOGIN_ID` | Bot login shown on the app's general page, e.g. `workdock[bot]` |
 | `WORKDOCK_GITHUB_CLIENT_ID` | GitHub App Client ID |
+| `WORKDOCK_GITHUB_APP_INSTALL_URL` | GitHub App install URL, e.g. `https://github.com/apps/your-app-name/installations/new` |
 
 Generate/download the GitHub App's private key and place it here:
 
