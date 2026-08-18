@@ -1,0 +1,294 @@
+/**
+ * Copyright 2026 Jaziel Guerrero
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+:root {
+  --workdock-charcoal: #090d15;
+  --workdock-blue: #0f4c5c;
+  --workdock-teal: #1e8788;
+  --workdock-gold: #f4d35e;
+  --workdock-orange: #ee964b;
+  --workdock-cream: #fbfaf8;
+  --workdock-cream-95: rgba(251, 250, 248, 0.95);
+  --workdock-cream-70: rgba(251, 250, 248, 0.7);
+  --workdock-cream-50: rgba(251, 250, 248, 0.5);
+  --workdock-cream-15: rgba(251, 250, 248, 0.15);
+  --workdock-cream-08: rgba(251, 250, 248, 0.08);
+  --workdock-charcoal-95: rgba(9, 13, 21, 0.95);
+  --workdock-charcoal-70: rgba(9, 13, 21, 0.7);
+  --workdock-charcoal-50: rgba(9, 13, 21, 0.5);
+}
+
+:root {
+  --vp-c-brand-1: var(--workdock-teal);
+  --vp-c-brand-2: var(--workdock-blue);
+  --vp-c-brand-3: var(--workdock-teal);
+  --vp-c-brand-soft: rgba(30, 135, 136, 0.14);
+  --vp-c-brand-mute: rgba(30, 135, 136, 0.28);
+
+  --vp-button-brand-bg: var(--workdock-teal);
+  --vp-button-brand-hover-bg: #197071;
+
+  --vp-nav-bg-color: var(--workdock-charcoal);
+  --vp-nav-screen-bg-color: var(--workdock-charcoal);
+  --vp-sidebar-bg-color: var(--workdock-charcoal);
+
+  --vp-c-bg: var(--workdock-cream);
+  --vp-c-bg-alt: var(--workdock-cream);
+  --vp-c-bg-soft: var(--workdock-cream);
+
+  --vp-c-text-1: var(--workdock-charcoal);
+  --vp-c-text-2: var(--workdock-charcoal-70);
+  --vp-c-text-3: var(--workdock-charcoal-50);
+}
+
+html.dark {
+  --vp-c-bg: var(--workdock-charcoal);
+  --vp-c-bg-alt: var(--workdock-charcoal);
+  --vp-c-bg-soft: var(--workdock-charcoal);
+}
+
+.VPNav,
+.VPNavBar,
+.VPSidebar {
+  background-color: var(--workdock-charcoal) !important;
+  --vp-c-bg: var(--workdock-charcoal) !important;
+  --vp-c-bg-alt: var(--workdock-charcoal) !important;
+  --vp-c-text-1: var(--workdock-cream-95) !important;
+  --vp-c-text-2: var(--workdock-cream-70) !important;
+  --vp-c-text-3: var(--workdock-cream-50) !important;
+}
+
+.VPNav .VPNavBar.home {
+  background-color: var(--workdock-charcoal) !important;
+}
+
+.VPNavBar .wrapper,
+.VPNavBar .container {
+  background-color: var(--workdock-charcoal) !important;
+}
+
+.VPNavBar .content-body {
+  background-color: var(--workdock-charcoal) !important;
+}
+
+.VPNav .VPNavBarTitle .title,
+.VPNav .VPNavBarTitle .title span,
+.VPNav .VPNavBarTitle span,
+.VPNavBar .VPNavBarTitle .title,
+.VPNavBar .VPNavBarTitle .title span,
+.VPNavBar .VPNavBarTitle span {
+  color: var(--workdock-cream) !important;
+  font-family: 'Sansation', sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  font-size: 1.25rem !important;
+  letter-spacing: -0.03em !important;
+}
+
+.VPNavBarMenuLink,
+.VPNavBarMenuLink .link-text,
+.VPNav .VPLink .link-text,
+.VPNavBar .VPLink .link-text {
+  color: var(--workdock-cream-70) !important;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink:hover .link-text,
+.VPNav .VPLink:hover .link-text,
+.VPNavBar .VPLink:hover .link-text {
+  color: var(--workdock-cream) !important;
+}
+
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink.active .link-text {
+  color: var(--workdock-cream) !important;
+}
+
+.VPSidebar .VPSidebarItem .link-text,
+.VPSidebar .VPSidebarItem .item-link .link-text,
+.VPSidebar .group-text,
+.VPSidebar .item .text,
+.VPSidebar .VPSidebarTitle {
+  color: var(--workdock-cream-70) !important;
+}
+
+.VPSidebar .VPSidebarItem.is-active > .item > .link .link-text,
+.VPSidebar .VPSidebarItem.is-active > .item > .link .text,
+.VPSidebar .VPSidebarItem.is-active > .item > .indicator,
+.VPSidebar .VPSidebarItem.is-active .VPLink .link-text {
+  color: var(--workdock-teal) !important;
+}
+
+.VPSidebar .VPSidebarItem .item-link:hover .link-text,
+.VPSidebar .VPSidebarItem .VPLink:hover .link-text,
+.VPSidebar .VPSidebarItem .link:hover .link-text {
+  color: var(--workdock-cream) !important;
+}
+
+.VPNav .VPNavBar .divider {
+  background-color: var(--workdock-cream-08) !important;
+}
+
+.VPSidebar .VPSidebarItem .item .caret-icon,
+.VPSidebar .VPSidebarItem .item .arrow-icon {
+  color: var(--workdock-cream-50) !important;
+}
+
+.VPNavBar .VPNavBarSearch .text,
+.VPNavBar .VPNavBarSearchButton .text {
+  color: var(--workdock-cream-70) !important;
+}
+
+.VPNavBar .VPNavBarSearchButton {
+  background-color: var(--workdock-cream-08) !important;
+  border-color: var(--workdock-cream-15) !important;
+  color: var(--workdock-cream-70) !important;
+}
+
+.VPNavBarHamburger span {
+  background-color: var(--workdock-cream) !important;
+}
+
+.VPNavBarSocialLinks a {
+  color: var(--workdock-cream-70) !important;
+}
+
+.VPNavBarSocialLinks a:hover {
+  color: var(--workdock-cream) !important;
+}
+
+.VPCover .name {
+  color: var(--workdock-charcoal) !important;
+}
+
+.VPCover .text {
+  color: var(--workdock-charcoal) !important;
+}
+
+.VPCover .tagline {
+  color: #4b5563 !important;
+}
+
+.vp-doc .custom-block.info {
+  border-color: var(--workdock-teal);
+}
+
+.vp-doc .custom-block.info .custom-block-title {
+  color: var(--workdock-teal);
+}
+
+.vp-doc a {
+  color: var(--workdock-teal);
+}
+
+.vp-doc a:hover {
+  color: var(--workdock-blue);
+}
+
+html.dark .VPContent,
+html.dark .VPDoc {
+  --vp-c-bg: var(--workdock-charcoal) !important;
+  --vp-c-bg-alt: var(--workdock-charcoal) !important;
+  --vp-c-bg-soft: var(--workdock-charcoal) !important;
+  --vp-c-divider: var(--workdock-cream-08) !important;
+  --vp-c-border: var(--workdock-cream-15) !important;
+  --vp-c-text-1: var(--workdock-cream-95) !important;
+  --vp-c-text-2: var(--workdock-cream-70) !important;
+  --vp-c-text-3: var(--workdock-cream-50) !important;
+  background-color: var(--workdock-charcoal) !important;
+  color: var(--workdock-cream-70) !important;
+}
+
+html.dark .vp-doc h1,
+html.dark .vp-doc h2,
+html.dark .vp-doc h3,
+html.dark .vp-doc h4 {
+  color: var(--workdock-cream) !important;
+}
+
+html.dark .vp-doc p,
+html.dark .vp-doc li,
+html.dark .vp-doc ul,
+html.dark .vp-doc ol,
+html.dark .vp-doc td,
+html.dark .vp-doc th,
+html.dark .vp-doc span,
+html.dark .vp-doc strong,
+html.dark .vp-doc em,
+html.dark .vp-doc blockquote {
+  color: var(--workdock-cream-70) !important;
+}
+
+html.dark .vp-doc :not(pre) > code {
+  color: var(--workdock-cream-95) !important;
+}
+
+html.dark .vp-doc pre {
+  background-color: rgba(251, 250, 248, 0.05) !important;
+}
+
+html.dark .vp-doc pre code {
+  color: var(--workdock-cream-95) !important;
+}
+
+html.dark .vp-doc blockquote {
+  border-left-color: var(--workdock-teal) !important;
+}
+
+html.dark .vp-doc table {
+  border-color: var(--workdock-cream-15) !important;
+}
+
+html.dark .vp-doc th,
+html.dark .vp-doc td {
+  border-color: var(--workdock-cream-15) !important;
+}
+
+html.dark .vp-doc tr:nth-child(2n) {
+  background-color: rgba(251, 250, 248, 0.03) !important;
+}
+
+html.dark .VPLocalNav {
+  background-color: var(--workdock-charcoal) !important;
+  --vp-c-bg: var(--workdock-charcoal) !important;
+  --vp-c-bg-alt: var(--workdock-charcoal) !important;
+  --vp-c-text-1: var(--workdock-cream-95) !important;
+  --vp-c-text-2: var(--workdock-cream-70) !important;
+  border-bottom-color: var(--workdock-cream-08) !important;
+}
+
+html.dark .VPLocalNavOutlineDropdown {
+  background-color: var(--workdock-charcoal) !important;
+  color: var(--workdock-cream-70) !important;
+}
+
+.VPNav {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.VPNavBar .divider {
+  display: none !important;
+}
+
+.VPSwitchAppearance .VPSwitch .check {
+  background-color: var(--workdock-cream) !important;
+}
+
+.VPSwitchAppearance .VPSwitch .icon .dark,
+.VPSwitchAppearance .VPSwitch .icon .light {
+  fill: var(--workdock-charcoal) !important;
+}
