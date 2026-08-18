@@ -4,13 +4,12 @@ export default defineConfig({
   title: "workdock",
   description: "WorkDock is an open-source SDLC orchestration engine for shipping software with AI agents.",
   cleanUrls: true,
-  base: "/docs",
   outDir: "docs/",
   ignoreDeadLinks: [/^https?:\/\/localhost/],
   head: [
-    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/docs/favicon-32x32.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/docs/favicon-16x16.png' }],
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/docs/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Sansation:wght@700&display=swap' }]
