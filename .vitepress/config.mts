@@ -3,13 +3,13 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "workdock",
   description: "WorkDock is an open-source SDLC orchestration engine for shipping software with AI agents.",
-  outDir: 'docs/.vitepress/dist',
   cleanUrls: true,
+  base: "/docs",
   ignoreDeadLinks: [/^https?:\/\/localhost/],
   head: [
-    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/docs/favicon-32x32.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/docs/favicon-16x16.png' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/docs/favicon.ico' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Sansation:wght@700&display=swap' }]
@@ -25,33 +25,33 @@ export default defineConfig({
       {
         text: 'Introduction',
         items: [
-          { text: 'What is WorkDock?', link: '/docs/what-is-workdock' },
-          { text: 'Self-hosted with Docker', link: '/docs/getting-started-docker' },
-          { text: 'Managed', link: '/docs/getting-started-managed' }
+          { text: 'What is WorkDock?', link: '/what-is-workdock' },
+          { text: 'Self-hosted with Docker', link: '/getting-started-docker' },
+          { text: 'Managed', link: '/getting-started-managed' }
         ]
       },
       {
         text: 'Issue Trackers',
         items: [
-          { text: 'Linear', link: '/docs/integrations/linear' }
+          { text: 'Linear', link: '/integrations/linear' }
         ]
       },
       {
         text: 'Git Hosting',
         items: [
-          { text: 'GitHub', link: '/docs/integrations/github' }
+          { text: 'GitHub', link: '/integrations/github' }
         ]
       },
       {
         text: 'Harnesses',
         items: [
-          { text: 'OpenCode', link: '/docs/integrations/opencode' }
+          { text: 'OpenCode', link: '/integrations/opencode' }
         ]
       },
       {
         text: 'Sandboxes',
         items: [
-          { text: 'Daytona', link: '/docs/integrations/daytona' }
+          { text: 'Daytona', link: '/integrations/daytona' }
         ]
       }
     ],
