@@ -25,33 +25,33 @@ export default defineConfig({
       {
         text: 'Introduction',
         items: [
-          { text: 'What is WorkDock?', link: '/what-is-workdock' },
-          { text: 'Self-hosted with Docker', link: '/getting-started-docker' },
-          { text: 'Managed', link: '/getting-started-managed' }
+          { text: 'What is WorkDock?', link: '/docs/what-is-workdock' },
+          { text: 'Self-hosted with Docker', link: '/docs/getting-started-docker' },
+          { text: 'Managed', link: '/docs/getting-started-managed' }
         ]
       },
       {
         text: 'Issue Trackers',
         items: [
-          { text: 'Linear', link: '/integrations/linear' }
+          { text: 'Linear', link: '/docs/integrations/linear' }
         ]
       },
       {
         text: 'Git Hosting',
         items: [
-          { text: 'GitHub', link: '/integrations/github' }
+          { text: 'GitHub', link: '/docs/integrations/github' }
         ]
       },
       {
         text: 'Harnesses',
         items: [
-          { text: 'OpenCode', link: '/integrations/opencode' }
+          { text: 'OpenCode', link: '/docs/integrations/opencode' }
         ]
       },
       {
         text: 'Sandboxes',
         items: [
-          { text: 'Daytona', link: '/integrations/daytona' }
+          { text: 'Daytona', link: '/docs/integrations/daytona' }
         ]
       }
     ],
