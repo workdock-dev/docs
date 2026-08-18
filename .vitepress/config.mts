@@ -54,6 +54,12 @@ export default defineConfig({
         items: [
           { text: 'Daytona', link: '/integrations/daytona' }
         ]
+      },
+      {
+        text: 'Observability',
+        items: [
+          { text: 'Introduction', link: '/observability/introduction' }
+        ]
       }
     ],
 
