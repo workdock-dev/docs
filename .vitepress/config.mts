@@ -18,6 +18,7 @@ export default defineConfig({
     logo: '/logo-light.svg',
 
     nav: [
+      { text: 'Home', link: 'https://workdock.dev' },
       { text: 'Getting Started', link: '/getting-started-docker' }
     ],
 
@@ -62,6 +63,8 @@ export default defineConfig({
     },
 
     socialLinks: [
+      { icon: 'x', link: 'https://x.com/jazielgs' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/jazielguerrero' },
       { icon: 'github', link: 'https://github.com/workdock-dev/engine' }
     ],
 
