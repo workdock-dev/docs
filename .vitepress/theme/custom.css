@@ -32,14 +32,14 @@
 }
 
 :root {
-  --vp-c-brand-1: var(--workdock-teal);
+  --vp-c-brand-1: var(--workdock-orange);
   --vp-c-brand-2: var(--workdock-blue);
-  --vp-c-brand-3: var(--workdock-teal);
-  --vp-c-brand-soft: rgba(30, 135, 136, 0.14);
-  --vp-c-brand-mute: rgba(30, 135, 136, 0.28);
+  --vp-c-brand-3: var(--workdock-orange);
+  --vp-c-brand-soft: rgba(238, 150, 75, 0.14);
+  --vp-c-brand-mute: rgba(238, 150, 75, 0.28);
 
-  --vp-button-brand-bg: var(--workdock-teal);
-  --vp-button-brand-hover-bg: #197071;
+  --vp-button-brand-bg: var(--workdock-orange);
+  --vp-button-brand-hover-bg: #d6823e;
 
   --vp-nav-bg-color: var(--workdock-charcoal);
   --vp-nav-screen-bg-color: var(--workdock-charcoal);
@@ -117,11 +117,16 @@ html.dark {
   color: var(--workdock-cream) !important;
 }
 
+.VPSidebar .VPSidebarTitle,
+.VPSidebar .group-text,
+.VPSidebar .VPSidebarItem.level-0 > .item > .text,
+.VPSidebar .VPSidebarItem.level-0 > .item > .link > .text {
+  color: #ffffff !important;
+}
+
 .VPSidebar .VPSidebarItem .link-text,
 .VPSidebar .VPSidebarItem .item-link .link-text,
-.VPSidebar .group-text,
-.VPSidebar .item .text,
-.VPSidebar .VPSidebarTitle {
+.VPSidebar .item .text {
   color: var(--workdock-cream-70) !important;
 }
 
@@ -129,7 +134,7 @@ html.dark {
 .VPSidebar .VPSidebarItem.is-active > .item > .link .text,
 .VPSidebar .VPSidebarItem.is-active > .item > .indicator,
 .VPSidebar .VPSidebarItem.is-active .VPLink .link-text {
-  color: var(--workdock-teal) !important;
+  color: var(--workdock-orange) !important;
 }
 
 .VPSidebar .VPSidebarItem .item-link:hover .link-text,
@@ -183,15 +188,15 @@ html.dark {
 }
 
 .vp-doc .custom-block.info {
-  border-color: var(--workdock-teal);
+  border-color: var(--workdock-orange);
 }
 
 .vp-doc .custom-block.info .custom-block-title {
-  color: var(--workdock-teal);
+  color: var(--workdock-orange);
 }
 
 .vp-doc a {
-  color: var(--workdock-teal);
+  color: var(--workdock-orange);
 }
 
 .vp-doc a:hover {
@@ -245,7 +250,7 @@ html.dark .vp-doc pre code {
 }
 
 html.dark .vp-doc blockquote {
-  border-left-color: var(--workdock-teal) !important;
+  border-left-color: var(--workdock-orange) !important;
 }
 
 html.dark .vp-doc table {
@@ -282,6 +287,15 @@ html.dark .VPLocalNavOutlineDropdown {
 
 .VPNavBar .divider {
   display: none !important;
+}
+
+.VPSidebar .VPSidebarItem.level-0 {
+  border-top: none !important;
+}
+
+.VPSidebar .group + .group {
+  border-top: none !important;
+  padding-top: 10px;
 }
 
 .VPSwitchAppearance .VPSwitch .check {

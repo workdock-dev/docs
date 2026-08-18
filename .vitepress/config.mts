@@ -3,6 +3,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "workdock",
   description: "WorkDock is an open-source SDLC orchestration engine for shipping software with AI agents.",
+  base: '/docs/',
+  cleanUrls: true,
   ignoreDeadLinks: [/^https?:\/\/localhost/],
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
@@ -16,7 +18,6 @@ export default defineConfig({
     logo: '/logo-light.svg',
 
     nav: [
-      { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started-docker' }
     ],
 
@@ -27,6 +28,30 @@ export default defineConfig({
           { text: 'What is WorkDock?', link: '/what-is-workdock' },
           { text: 'Self-hosted with Docker', link: '/getting-started-docker' },
           { text: 'Managed', link: '/getting-started-managed' }
+        ]
+      },
+      {
+        text: 'Issue Trackers',
+        items: [
+          { text: 'Linear', link: '/integrations/linear' }
+        ]
+      },
+      {
+        text: 'Git Hosting',
+        items: [
+          { text: 'GitHub', link: '/integrations/github' }
+        ]
+      },
+      {
+        text: 'Harnesses',
+        items: [
+          { text: 'OpenCode', link: '/integrations/opencode' }
+        ]
+      },
+      {
+        text: 'Sandboxes',
+        items: [
+          { text: 'Daytona', link: '/integrations/daytona' }
         ]
       }
     ],
