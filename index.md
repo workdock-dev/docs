@@ -8,4 +8,4 @@ if (typeof window !== 'undefined') {
 }
 </script>
 
-<meta http-equiv="refresh" content="0;url=/docs/what-is-workdock.html">
+<meta http-equiv="refresh" content="0;url=/what-is-workdock.html">
