@@ -4,7 +4,7 @@ layout: page
 
 <script setup>
 if (typeof window !== 'undefined') {
-  window.location.href = '/docs/what-is-workdock.html'
+  window.location.href = '/what-is-workdock.html'
 }
 </script>
 
