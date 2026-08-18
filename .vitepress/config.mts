@@ -5,7 +5,7 @@ export default defineConfig({
   description: "WorkDock is an open-source SDLC orchestration engine for shipping software with AI agents.",
   cleanUrls: true,
   base: "/docs",
-  outDir: "docs/.vitepress/dist",
+  outDir: "docs/",
   ignoreDeadLinks: [/^https?:\/\/localhost/],
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/docs/favicon-32x32.png' }],
