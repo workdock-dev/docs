@@ -105,21 +105,21 @@ Complete the initial Infisical setup:
 
 1. Create the **administrator account** with your email address and a password.
 
-   ![Create Infisical admin](./assets/infisical_create_admin.png)
+   ![Create Infisical admin](/infisical_create_admin.png)
 
 2. Create an **organization**. You can choose any name you like.
 
-   ![Create Infisical organization](./assets/infisical_create_org.png)
+   ![Create Infisical organization](/infisical_create_org.png)
 
 3. Complete the onboarding flow using the default options.
 
 4. From the Infisical home screen, open **Secret Management**.
 
-   ![Infisical home screen](./assets/infisical_home.png)
+   ![Infisical home screen](/infisical_home.png)
 
 5. Click **Create Project**, choose a project name, and create it.
 
-   ![Create Infisical project](./assets/infisical_create_project.png)
+   ![Create Infisical project](/infisical_create_project.png)
 
 ### Create WorkDock's secret folders
 
@@ -136,7 +136,7 @@ From **Add Secret**, select **Add Folder** and create:
 These folder paths are required by WorkDock and **must use these exact names**. They are not configurable.
 :::
 
-![Add Infisical folders](./assets/infisical_create_folders.png)
+![Add Infisical folders](/infisical_create_folders.png)
 
 ### Create a machine identity
 
@@ -145,11 +145,11 @@ WorkDock needs its own machine identity so the engine can authenticate with Infi
 1. In the project sidebar, open **Access Control → Machine Identities** and click **Add Machine Identity**.
 2. Give it any name you like, select **Member** as the role, and create it.
 
-   ![Create Infisical machine identity](./assets/infisical_create_machine_id.png)
+   ![Create Infisical machine identity](/infisical_create_machine_id.png)
 
 3. After creation, open **Universal Auth → View Auth Method**.
 
-   ![View Universal Auth method](./assets/infisical_create_machine_id_1.png)
+   ![View Universal Auth method](/infisical_create_machine_id_1.png)
 
 4. Copy the **Client ID** into:
 
@@ -163,7 +163,7 @@ WorkDock needs its own machine identity so the engine can authenticate with Infi
    WORKDOCK_INFISICAL_CLIENT_SECRET
    ```
 
-   ![Copy client ID and create client secret](./assets/infisical_create_machine_id_2.png)
+   ![Copy client ID and create client secret](/infisical_create_machine_id_2.png)
 
 ::: warning
 Copy the client secret when it is generated. You may not be able to retrieve the same secret again later.
@@ -177,7 +177,7 @@ Add it to `.env` as:
 WORKDOCK_INFISICAL_PROJECT_ID
 ```
 
-![Copy Infisical project ID](./assets/infisical_create_project_id.png)
+![Copy Infisical project ID](/infisical_create_project_id.png)
 
 ::: tip
 At this point, WorkDock has everything it needs to authenticate with Infisical and access its runtime secrets.
@@ -193,7 +193,7 @@ You'll create a Linear OAuth application so WorkDock can connect to a workspace 
 For more information about Linear OAuth applications, see the [Linear API documentation](https://developers.linear.dev).
 :::
 
-![Create Linear OAuth app](./assets/linear_oauth_app.png)
+![Create Linear OAuth app](/linear_oauth_app.png)
 
 ### Create the OAuth application
 
@@ -268,7 +268,7 @@ You'll create a GitHub App and grant it only the repository permissions WorkDock
 For more information, see GitHub's documentation on [registering a GitHub App](https://docs.github.com/en/apps/creating-github-apps/registering-github-app/registering-a-github-app).
 :::
 
-![Create GitHub App](./assets/github_create_app.png)
+![Create GitHub App](/github_create_app.png)
 
 ### Create the GitHub App
 
