@@ -1,5 +1,5 @@
 .vitepress/cache
-.vitepress/dist
+docs/.vitepress/dist
 
 # compiled output
 /dist
