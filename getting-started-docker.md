@@ -75,7 +75,6 @@ Then add the following to .env, place the GitHub App key in
 docker/workdock/github-app.pem, and rerun this script:
 
   WORKDOCK_LINEAR_WEBHOOK_SECRET
-  WORKDOCK_LINEAR_API_KEY
   ...
 ```
 
