@@ -38,6 +38,8 @@ WorkDock provides the coordination layer between the systems already involved in
 
 When an issue is assigned to WorkDock, it creates an agent session, provisions an isolated sandbox, prepares the repository, and starts the configured coding harness with the context required for the work. The agent works inside that environment, and the result moves into the existing Git workflow as a pull request.
 
+When a ticket is completed, WorkDock archives the sandbox to free resources while preserving the environment's state. If the ticket is reopened, the sandbox is unarchived and the agent session resumes from where it left off.
+
 From there, the normal development process continues. A developer or AI agent reviews the changes, provides feedback, and that feedback can trigger another cycle of work while preserving the context of the original session.
 
 WorkDock doesn't replace your development workflow. **It connects it.**

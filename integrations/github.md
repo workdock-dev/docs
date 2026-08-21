@@ -12,6 +12,14 @@ The **coding harness** is responsible for interacting with GitHub from within th
 
 WorkDock stays focused on **orchestration**: managing the agent session, providing the necessary context, and coordinating the work while the harness performs the Git operations against the repository.
 
+### Authentication for All Repositories
+
+WorkDock requires GitHub App authentication for **all repositories**, including public ones. This ensures that the agent has the necessary access to perform Git operations such as pushing branches, creating pull requests, and responding to review comments.
+
+When an issue references a repository that does not yet have a GitHub connection, WorkDock requests the user to authorize the GitHub App for that repository. The user can grant access to one or more repositories during the authorization flow, and WorkDock will store all granted connections.
+
+If you expect the agent to modify GitHub Actions workflows, make sure the **Workflow** permission is enabled in the GitHub App's repository permissions. Without this permission, the agent will not be able to push changes to workflow files.
+
 ### Pull Request Feedback
 
 WorkDock also integrates with GitHub's pull request workflow through **webhooks for review comments**.
