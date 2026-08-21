@@ -26,3 +26,9 @@ Add a label in the format `repo=owner/repo` to the Linear issue — for example,
 2. **Verify repository access** to make sure WorkDock can work with the repository on GitHub.
 3. **Request authorization when needed** if access has not yet been granted, notifying you directly in Linear with a link to install the GitHub App.
 
+### Ticket Completion and Sandbox Archive
+
+When a Linear issue is moved to a **Done** status, WorkDock automatically archives the sandbox associated with that issue. This frees resources while preserving the sandbox state in case the issue needs to be reopened.
+
+If the issue is later reopened, WorkDock detects the archived sandbox and unarchives it before resuming the agent session, restoring the previous working environment without a full reprovision.
+

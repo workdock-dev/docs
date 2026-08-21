@@ -314,6 +314,8 @@ Under **Repository permissions**, grant:
 Don't reduce these permissions during setup. WorkDock requires **Read and Write** access to both **Contents** and **Pull requests** to work with repositories and pull requests.
 :::
 
+If you expect the agent to modify GitHub Actions workflows, also enable the **Workflow** permission under **Repository permissions**. Without this, the agent will not be able to push changes to workflow files.
+
 ### Subscribe to events
 
 Under **Subscribe to events**, enable:

@@ -28,4 +28,20 @@ The overall flow looks like:
 
 **Issue → WorkDock → Sandbox → OpenCode → Code Changes → Commit / Pull Request**
 
+### Linear MCP Integration
+
+WorkDock configures OpenCode with a **Linear MCP (Model Context Protocol) server** as part of the agent session. This gives the AI agent direct access to the Linear workspace associated with the ticket, allowing it to read issue details, update ticket status, add comments, and interact with the project management workflow without manual intervention.
+
+The Linear MCP server is set up automatically when the session starts — no additional configuration is required.
+
+### Session Behavior
+
+When an agent session starts, WorkDock provides OpenCode with a system prompt that includes instructions for working with the ticket. This prompt defines the agent's role and boundaries, including rules for pull request management:
+
+- The agent will not close a pull request unless explicitly instructed to do so.
+- When review comments are added to a pull request, the agent addresses all applicable comments within the same request.
+- The agent preserves the pull request's open state unless the user explicitly asks to change it.
+
+These rules ensure the agent works within the existing development workflow rather than acting on assumptions about when work is complete.
+
 This separation keeps **WorkDock responsible for orchestration and session lifecycle**, while **OpenCode is responsible for carrying out the development work and Git operations according to the instructions it receives**.
